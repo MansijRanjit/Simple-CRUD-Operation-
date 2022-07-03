@@ -1,0 +1,11 @@
+E:\6th Semester\College Practise\College Practise\bin\Debug\College Practise.exe.config
+E:\6th Semester\College Practise\College Practise\bin\Debug\College Practise.exe
+E:\6th Semester\College Practise\College Practise\bin\Debug\College Practise.pdb
+E:\6th Semester\College Practise\College Practise\obj\Debug\College Practise.csproj.AssemblyReference.cache
+E:\6th Semester\College Practise\College Practise\obj\Debug\College Practise.csproj.SuggestedBindingRedirects.cache
+E:\6th Semester\College Practise\College Practise\obj\Debug\College_Practise.Properties.Resources.resources
+E:\6th Semester\College Practise\College Practise\obj\Debug\College Practise.csproj.GenerateResource.cache
+E:\6th Semester\College Practise\College Practise\obj\Debug\College Practise.csproj.CoreCompileInputs.cache
+E:\6th Semester\College Practise\College Practise\obj\Debug\College Practise.exe
+E:\6th Semester\College Practise\College Practise\obj\Debug\College Practise.pdb
+E:\6th Semester\College Practise\College Practise\obj\Debug\College_Practise.Form2.resources
