@@ -20,9 +20,13 @@ namespace College_Practise
         }
 
         private SqlConnection con = new SqlConnection(ConfigurationSettings.AppSettings["connect"]);
+        public string user;
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            Login lgn = new Login();
+            //user = lgn.cmbboxUsertype.Text;
+
             TotalUser();
             cmbboxUsertype.SelectedIndex = 0;
 
@@ -187,6 +191,17 @@ namespace College_Practise
             txtboxSearchByUsername.Clear();
             userid = 0;
             txtboxSearchByUsername.Clear();
+        }
+
+        private void txtboxSearchByUsername_TextChanged(object sender, EventArgs e)
+        {
+            string sql = $"select * from tbluser where username like '{txtboxSearchByUsername.Text}%'";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "sbu");
+
+            grdUsername.DataSource = ds.Tables["sbu"];
         }
     }
 }

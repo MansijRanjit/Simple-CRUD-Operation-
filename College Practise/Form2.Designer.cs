@@ -128,46 +128,50 @@
             // 
             // btnSave
             // 
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Location = new System.Drawing.Point(49, 245);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(79, 31);
             this.btnSave.TabIndex = 8;
             this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnCreateUser
             // 
+            this.btnCreateUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnCreateUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreateUser.Location = new System.Drawing.Point(150, 245);
             this.btnCreateUser.Name = "btnCreateUser";
             this.btnCreateUser.Size = new System.Drawing.Size(93, 31);
             this.btnCreateUser.TabIndex = 9;
             this.btnCreateUser.Text = "Create User";
-            this.btnCreateUser.UseVisualStyleBackColor = true;
+            this.btnCreateUser.UseVisualStyleBackColor = false;
             this.btnCreateUser.Click += new System.EventHandler(this.btnCreateUser_Click);
             // 
             // btnCancel
             // 
+            this.btnCancel.BackColor = System.Drawing.Color.Gray;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Location = new System.Drawing.Point(262, 245);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 31);
             this.btnCancel.TabIndex = 10;
             this.btnCancel.Text = "Reset";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnDelete
             // 
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.Location = new System.Drawing.Point(356, 245);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(77, 31);
             this.btnDelete.TabIndex = 11;
             this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // lblSearchByUSername
@@ -179,21 +183,21 @@
             this.lblSearchByUSername.Size = new System.Drawing.Size(135, 16);
             this.lblSearchByUSername.TabIndex = 12;
             this.lblSearchByUSername.Text = "Search By Username";
-            // 
             // txtboxSearchByUsername
             // 
             this.txtboxSearchByUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtboxSearchByUsername.Location = new System.Drawing.Point(204, 308);
             this.txtboxSearchByUsername.Name = "txtboxSearchByUsername";
-            this.txtboxSearchByUsername.Size = new System.Drawing.Size(133, 22);
+            this.txtboxSearchByUsername.Size = new System.Drawing.Size(316, 22);
             this.txtboxSearchByUsername.TabIndex = 13;
+            this.txtboxSearchByUsername.TextChanged += new System.EventHandler(this.txtboxSearchByUsername_TextChanged);
             // 
             // grdUsername
             // 
             this.grdUsername.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdUsername.Location = new System.Drawing.Point(49, 365);
             this.grdUsername.Name = "grdUsername";
-            this.grdUsername.Size = new System.Drawing.Size(516, 175);
+            this.grdUsername.Size = new System.Drawing.Size(453, 248);
             this.grdUsername.TabIndex = 14;
             this.grdUsername.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdUsername_CellClick);
             // 
@@ -211,7 +215,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(594, 565);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(547, 625);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.grdUsername);
             this.Controls.Add(this.txtboxSearchByUsername);
