@@ -152,7 +152,7 @@
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ComboBox cmbboxUsertype;
         private System.Windows.Forms.Label lvlUsertype;
+        public System.Windows.Forms.ComboBox cmbboxUsertype;
     }
 }

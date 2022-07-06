@@ -17,16 +17,14 @@ namespace College_Practise
         public Form2()
         {
             InitializeComponent();
+            //Login lgn = new Login();
+            //user = lgn.cmbboxUsertype.Text;
         }
 
         private SqlConnection con = new SqlConnection(ConfigurationSettings.AppSettings["connect"]);
-        public string user;
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            Login lgn = new Login();
-            //user = lgn.cmbboxUsertype.Text;
-
             TotalUser();
             cmbboxUsertype.SelectedIndex = 0;
 
@@ -35,7 +33,18 @@ namespace College_Practise
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataSet ds = new DataSet();
             da.Fill(ds, "user");
-
+            if (label2.Text == "Admin")
+            {
+                btnCreateUser.Enabled = true;
+                btnDelete.Enabled = true;
+                btnSave.Enabled = true;
+            }
+            else
+            {
+                btnCreateUser.Enabled = false;
+                btnDelete.Enabled = false;
+                btnSave.Enabled = false;
+            }
             grdUsername.DataSource = ds.Tables["user"];
         }
 

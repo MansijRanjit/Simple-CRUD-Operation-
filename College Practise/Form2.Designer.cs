@@ -44,6 +44,7 @@
             this.txtboxSearchByUsername = new System.Windows.Forms.TextBox();
             this.grdUsername = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grdUsername)).BeginInit();
             this.SuspendLayout();
             // 
@@ -183,6 +184,7 @@
             this.lblSearchByUSername.Size = new System.Drawing.Size(135, 16);
             this.lblSearchByUSername.TabIndex = 12;
             this.lblSearchByUSername.Text = "Search By Username";
+            // 
             // txtboxSearchByUsername
             // 
             this.txtboxSearchByUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -211,12 +213,24 @@
             this.label1.TabIndex = 15;
             this.label1.Text = "label1";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(199, 211);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(44, 16);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "label2";
+            this.label2.Visible = false;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(547, 625);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.grdUsername);
             this.Controls.Add(this.txtboxSearchByUsername);
@@ -260,5 +274,6 @@
         private System.Windows.Forms.TextBox txtboxSearchByUsername;
         private System.Windows.Forms.DataGridView grdUsername;
         private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label label2;
     }
 }

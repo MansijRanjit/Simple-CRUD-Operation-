@@ -26,6 +26,8 @@ namespace College_Practise
             cmbboxUsertype.SelectedIndex = 0;
         }
 
+        public string usertype;
+
         private void btnLogin_Click(object sender, EventArgs e)
         {
             if (txtboxUsername.Text != "" && txtboxPassword.Text != "" && cmbboxUsertype.SelectedIndex != 0)
@@ -38,7 +40,10 @@ namespace College_Practise
 
                 if (Convert.ToInt32(ds.Tables["login"].Rows.Count) >= 1)
                 {
+                    usertype = cmbboxUsertype.Text;
+
                     Form2 frm2 = new Form2();
+                    frm2.label2.Text = usertype;
                     frm2.Show();
                     txtboxUsername.Text = "";
                     txtboxPassword.Text = "";
